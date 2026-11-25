@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highway Racing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>🏎️ HIGHWAY RACER</h2>
+
+  <div id="score">Score: 0 | Best: 0</div>
+
+  <div id="game">
+    <div id="road"></div>
+
+    <div id="player" class="car">
+      <div class="window"></div>
+      <div class="wheel w1"></div>
+      <div class="wheel w2"></div>
+    </div>
+
+    <div id="overlay">
+      <h1>🏁 RACING GAME</h1>
+      <p>Dodge the enemy cars!</p>
+      <button onclick="startGame()">START GAME</button>
+    </div>
+  </div>
+
+  <div id="controls">
+    <button onclick="move(-1)">⬅ LEFT</button>
+    <button onclick="move(1)">RIGHT ➡</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
